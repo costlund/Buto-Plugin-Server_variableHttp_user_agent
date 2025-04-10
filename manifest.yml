@@ -1,0 +1,22 @@
+version: 1.0.0
+history:
+  1.0.0:
+    date: '2025-04-10'
+    title: 'First version'
+    description: 'First version. Manifest created.'
+plugin:
+  -
+    name: browser/detection_v1
+    version: 1.4.2
+sys:
+  -
+    name: mercury
+    version:
+      - 2.110.4
+php:
+  version:
+    - 8.2.0
+author: null
+links: null
+description: ''
+third_part_software: null

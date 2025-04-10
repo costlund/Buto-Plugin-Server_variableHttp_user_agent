@@ -1,0 +1,60 @@
+readme:
+  name: Buto-Plugin-Server_variableHttp_user_agent
+  description: |
+    Set data in session detected in server variable HTTP_USER_AGENT.
+  item:
+    -
+      name: Settings
+    -
+      name: Usage
+      description: |
+        Element example.
+        ````
+          settings:
+            disabled: globals:_SESSION/plugin/server_variable/http_user_agent/data/webview
+          type: div
+          innerHTML: Hide this element if Android Webview.
+        ````
+    -
+      name: Pages
+      item:
+        -
+          name: page_test
+    -
+      name: Widgets
+      item: {  }
+    -
+      name: Event
+      item:
+        -
+          name: event_set_session
+          description: |
+            Set session data.
+            ````
+            events:
+              document_render_before:
+                -
+                  plugin: 'server_variable/http_user_agent'
+                  method: set_session
+            ````
+    -
+      name: Construct
+    -
+      name: Methods
+      item:
+        -
+          name: getData
+        -
+          name: setSession
+          description: |
+            Data put in session.
+            ````
+            plugin:
+              server_variable:
+                http_user_agent:
+                  data:
+                    http_user_agent: 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10.15; rv:132.0) Gecko/20100101 Firefox/132.0'
+                    browser_name: Firefox
+                    os_name: 'Mac OS X 10'
+                    webview: false
+            ````
