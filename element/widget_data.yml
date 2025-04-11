@@ -1,0 +1,44 @@
+-
+  type: div
+  innerHTML:
+    - 
+      type: strong
+      attribute:
+        class: content-colon
+      innerHTML: HTTP USER AGENT
+    - 
+      type: span
+      innerHTML: globals:_SESSION/plugin/server_variable/http_user_agent/data/http_user_agent
+-
+  type: div
+  innerHTML:
+    - 
+      type: strong
+      attribute:
+        class: content-colon
+      innerHTML: Browser
+    - 
+      type: span
+      innerHTML: globals:_SESSION/plugin/server_variable/http_user_agent/data/browser_name
+-
+  type: div
+  innerHTML:
+    - 
+      type: strong
+      attribute:
+        class: content-colon
+      innerHTML: Operation system
+    - 
+      type: span
+      innerHTML: globals:_SESSION/plugin/server_variable/http_user_agent/data/os_name
+-
+  type: div
+  innerHTML:
+    - 
+      type: strong
+      attribute:
+        class: content-colon
+      innerHTML: Web tool
+    - 
+      type: span
+      innerHTML: globals:_SESSION/plugin/server_variable/http_user_agent/data/web_tool

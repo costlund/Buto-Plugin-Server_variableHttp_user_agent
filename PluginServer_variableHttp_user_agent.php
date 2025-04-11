@@ -60,6 +60,10 @@ class PluginServer_variableHttp_user_agent{
     if(strstr($data->get('http_user_agent'), "; wv)")){
       $data->set('webview', true);
     }
+    $data->set('web_tool', 'Browser');
+    if($data->get('webview')){
+      $data->set('web_tool', 'Webview');
+    }
     /**
      * 
      */
@@ -87,5 +91,11 @@ class PluginServer_variableHttp_user_agent{
       $this->setSession($data);
     }
     return null;
+  }
+  /**
+   * widget
+   */
+  public function widget_data($data){
+    wfDocument::renderElementFromFolder(__DIR__, __FUNCTION__);
   }
 }
