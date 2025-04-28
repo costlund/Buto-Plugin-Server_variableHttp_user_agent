@@ -1,5 +1,9 @@
-version: 1.1.0
+version: 1.1.1
 history:
+  1.1.1:
+    date: '2025-04-28'
+    title: 'HTTP USER AGENT'
+    description: 'Handle if param is null.'
   1.1.0:
     date: '2025-04-11'
     title: 'Widget'

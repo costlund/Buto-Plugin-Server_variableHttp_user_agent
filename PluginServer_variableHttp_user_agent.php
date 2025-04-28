@@ -57,7 +57,7 @@ class PluginServer_variableHttp_user_agent{
      * webview
      */
     $data->set('webview', false);
-    if(strstr($data->get('http_user_agent'), "; wv)")){
+    if(strstr((string)$data->get('http_user_agent'), "; wv)")){
       $data->set('webview', true);
     }
     $data->set('web_tool', 'Browser');
